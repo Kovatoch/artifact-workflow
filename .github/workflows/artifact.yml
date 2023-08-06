@@ -17,3 +17,5 @@ jobs:
           with: 
             name: ${{ env.ARTIFACT_NAME }}
             path: .
+        - name: Touch file
+          run: "touch -a -m -t 203801181205.09 tgs.txt"
